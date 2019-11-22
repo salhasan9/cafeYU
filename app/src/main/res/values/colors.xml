@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="coloroffBlack">#3d3d3d</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#a6a6a6</color>
+    <color name="colorDark">#000000</color>
+    <color name="colorPrimaryDark1">#201c16</color>
+    <color name="colorOrange">#ca9d62</color>
+    <color name="overLayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+    <color name="cardColor">#ffffff</color>
+    <color name="textcardColor">#3f3f3f</color>
+
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionbar">#0e0d0e</color>
+
+</resources>

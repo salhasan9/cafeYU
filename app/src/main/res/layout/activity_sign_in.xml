@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_in">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/xzx"></ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/common_signin_button_text"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icons8_student_male_filled_100px"
+                    android:layout_marginTop="1dp">
+                </ImageView>
+                <EditText
+                    android:id="@+id/A_sign_in_edt_id_stu"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_back"
+                    android:drawableRight="@drawable/ic_credit_card_black_24dp"
+                    android:hint="Enter ID Number"
+                    android:inputType="number"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorWhite"
+                    android:textStyle="bold">
+
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/A_sign_in_edt_pass_stu"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_back"
+                    android:drawableRight="@drawable/ic_security_black_24dp"
+                    android:hint="Enter password"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorWhite"
+                    android:textStyle="bold">
+
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/A_sign_in_BtnSginIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:text="Sgin In"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:textStyle="bold">
+
+                </Button>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

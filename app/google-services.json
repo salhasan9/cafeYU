@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "681327981208",
+    "firebase_url": "https://foodyu-68ab2.firebaseio.com",
+    "project_id": "foodyu-68ab2",
+    "storage_bucket": "foodyu-68ab2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681327981208:android:ba76e41a92e71851f316ed",
+        "android_client_info": {
+          "package_name": "com.example.foodcafeuni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681327981208-8fra55lj865rb5deuuu5limc8dhrh26n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodcafeuni",
+            "certificate_hash": "285f48de1796ea2348aedffa5a3f6cd8712a27a5"
+          }
+        },
+        {
+          "client_id": "681327981208-e67jgd0jo23hrokrsb8ru57s16e3aajc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJkECi7mmOEVoWgQ4S9hF7Ac_-4l0gKwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681327981208-e67jgd0jo23hrokrsb8ru57s16e3aajc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

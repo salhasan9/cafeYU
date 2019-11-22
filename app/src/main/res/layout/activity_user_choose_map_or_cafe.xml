@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_choose_map_or_cafe">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/xzx">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/we"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="2"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="  Welcome To YU Cafe"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="163dp">
+
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/plese"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/we"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="163dp"
+        android:text="   Please Choose Between: "
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="307dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/Choose_cafe"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@+id/plese"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_back"
+        android:text="Choose Cafe "
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="307dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/near_cafe"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@+id/Choose_cafe"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_back"
+        android:text="Nearest Cafe By Map "
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="436dp">
+
+    </Button>
+</RelativeLayout>

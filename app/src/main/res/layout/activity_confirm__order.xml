@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c"
+    tools:context=".Confirm_Order">
+
+    <Button
+        android:id="@+id/A_btn_confirm"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_back"
+        android:text="Confirm"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/A_phone_number_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/button_back"
+        android:drawableRight="@drawable/ic_business_black_24dp"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556"
+        tools:layout_editor_absoluteX="12dp">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/A_full_name_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/button_back"
+        android:drawableRight="@drawable/ic_person_black_24dp"
+        android:hint="Enter Full Name"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448"
+        tools:layout_editor_absoluteX="0dp">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="325dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Please fill in the details"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16">
+
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
