@@ -48,7 +48,7 @@ public class Cart extends AppCompatActivity {
         V_total_price_cart = (TextView)findViewById(R.id.A_total_price_cart);
         V_ResID = getIntent().getStringExtra("IDRESCart");
 
-
+        Toast.makeText(this, "Hi Samah", Toast.LENGTH_SHORT).show();
         V_btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {        V_total_price_cart.setText(String.valueOf("Total Price = "+V_Total_Price+"JD"));
