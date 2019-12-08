@@ -42,7 +42,8 @@ public class Sign_in extends AppCompatActivity {
             }
         });
     }
-    private void LoginUser() {
+    private void LoginUser()
+    {
         String id =  V_A_sign_in_edt_id_stu.getText().toString();
         String password = V_A_sign_in_edt_pass_stu.getText().toString();
         load = new ProgressDialog(this);
@@ -60,7 +61,8 @@ public class Sign_in extends AppCompatActivity {
         }
     }
 
-    private void FirebaseAccess(final String id, final String password) {
+    private void FirebaseAccess(final String id, final String password)
+    {
         final DatabaseReference databaseReference;
         databaseReference= FirebaseDatabase.getInstance().getReference();
 

@@ -14,6 +14,7 @@ public class User_choose_map_or_cafe extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_choose_map_or_cafe);
+        getSupportActionBar().hide();
         //ini Var
         Choose_cafe = (Button)findViewById(R.id.Choose_cafe);
         near_cafe= (Button)findViewById(R.id.near_cafe);

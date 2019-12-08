@@ -29,13 +29,13 @@ public class setting extends AppCompatActivity {
     private ProgressDialog load;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
-
+        getSupportActionBar().hide();
         settings_confirm_collage = (EditText) findViewById(R.id.settings_confirm_collage);
-        ;
         settings_user_email = (EditText) findViewById(R.id.settings_user_email);
         settings_password = (EditText) findViewById(R.id.settings_password);
         settings_confirm_password = (EditText) findViewById(R.id.settings_confirm_password);
