@@ -15,21 +15,6 @@
 
     </ImageView>
 
-    <Button
-        android:id="@+id/a_setting_update"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/settings_confirm_collage"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="59dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="5dp"
-        android:layout_weight="1"
-        android:background="@drawable/button_back"
-        android:text="UpDate"
-        android:textColor="@color/colorWhite"
-        android:textSize="12dp"
-        android:textStyle="bold"></Button>
 
     <TextView
                         android:id="@+id/profile_image_change_btn"
@@ -63,43 +48,12 @@
         />
 
 
-    <EditText
-        android:id="@+id/settings_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/settings_user_email"
-        android:hint="Password.."
-        android:layout_margin="15dp"
-        android:padding="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/button_back"
-        android:drawableRight="@drawable/ic_create_black_24dp"
-        android:inputType="text"
-        android:textColor="@android:color/white"
-        android:textColorHint="@color/colorWhite"
-        android:textStyle="bold"
-        />
-    <EditText
-        android:id="@+id/settings_confirm_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/settings_password"
-        android:hint="Confirm Password.."
-        android:layout_margin="15dp"
-        android:padding="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/button_back"
-        android:drawableRight="@drawable/ic_create_black_24dp"
-        android:inputType="text"
-        android:textColor="@android:color/white"
-        android:textColorHint="@color/colorWhite"
-        android:textStyle="bold"
-        />
+
     <EditText
         android:id="@+id/settings_confirm_collage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/settings_confirm_password"
+        android:layout_below="@+id/settings_user_email"
         android:hint="Confirm collage.."
         android:layout_margin="15dp"
         android:padding="10dp"
@@ -113,12 +67,12 @@
         />
 
     <Button
-        android:id="@+id/A_setting_update"
+        android:id="@+id/a_setting_update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/settings_confirm_collage"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="59dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
         android:layout_weight="1"
@@ -126,7 +80,9 @@
         android:text="UpDate"
         android:textColor="@color/colorWhite"
         android:textSize="12dp"
-        android:textStyle="bold"></Button>
+        android:textStyle="bold">
+
+    </Button>
 
     <Button
         android:id="@+id/A_setting_close"
@@ -134,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/a_setting_update"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="26dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
         android:layout_weight="1"

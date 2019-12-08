@@ -24,7 +24,7 @@ import java.util.HashMap;
 
 public class setting extends AppCompatActivity {
 
-    private EditText settings_confirm_collage, settings_password, settings_confirm_password, settings_user_email;
+    private EditText settings_confirm_collage, settings_user_email;
     private Button A_setting_update, A_setting_close;
     private ProgressDialog load;
 
@@ -37,12 +37,9 @@ public class setting extends AppCompatActivity {
         getSupportActionBar().hide();
         settings_confirm_collage = (EditText) findViewById(R.id.settings_confirm_collage);
         settings_user_email = (EditText) findViewById(R.id.settings_user_email);
-        settings_password = (EditText) findViewById(R.id.settings_password);
-        settings_confirm_password = (EditText) findViewById(R.id.settings_confirm_password);
-        A_setting_update = (Button) findViewById(R.id.A_setting_update);
+        A_setting_update = (Button) findViewById(R.id.a_setting_update);
         A_setting_close = (Button) findViewById(R.id.A_setting_close);
         load = new ProgressDialog(this);
-        Toast.makeText(this, "hhhhhhhhhhhhh", Toast.LENGTH_SHORT).show();
         settings_confirm_collage.setText(Current_Any.ActiveUsers.getCollage());
         settings_user_email.setText(Current_Any.ActiveUsers.getEmail());
 
@@ -65,7 +62,7 @@ public class setting extends AppCompatActivity {
 
     }
 
-    private void updateOnlyUserInfo(final String collage ,final String password ,final String email )
+    private void updateOnlyUserInfo(final String collage ,final String email )
     {
 
             final DatabaseReference databaseReference;
@@ -77,7 +74,6 @@ public class setting extends AppCompatActivity {
 
                     HashMap<String, Object> userMap = new HashMap<>();
                     userMap.put("collage", settings_confirm_collage.getText().toString());
-                    userMap.put("password", settings_password.getText().toString());
                     userMap.put("email", settings_user_email.getText().toString());
                     databaseReference.child(Current_Any.ActiveUsers.getStudentNumber()).updateChildren(userMap);
 
@@ -98,21 +94,20 @@ public class setting extends AppCompatActivity {
 
     private void Check() {
         String collage = settings_confirm_collage.getText().toString() ;
-        String password = settings_password.getText().toString();
         String email = settings_user_email.getText().toString();
 
-       if(password.isEmpty()){
-           Toast.makeText(this, " password is mandatory.", Toast.LENGTH_SHORT).show();
+       if(collage.isEmpty()){
+           Toast.makeText(this, " collage is mandatory.", Toast.LENGTH_SHORT).show();
 
-       }else if(settings_confirm_password.getText().toString().isEmpty()){
-           Toast.makeText(this, "confirm password is mandatory.", Toast.LENGTH_SHORT).show();
+       }else if(email.isEmpty()){
+           Toast.makeText(this, "email is mandatory.", Toast.LENGTH_SHORT).show();
 
        }else {
         load.setTitle("Create Account");
         load.setMessage("please wait ....");
         load.setCanceledOnTouchOutside(false);
         load.show();
-        updateOnlyUserInfo(collage , password , email);
+        updateOnlyUserInfo(collage , email);
        }
     }
 }

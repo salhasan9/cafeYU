@@ -15,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".search"></activity>
+        <activity android:name=".choose_change_pass_or_change_profile"></activity>
+        <activity android:name=".change_password" />
+        <activity android:name=".search" />
         <activity android:name=".User_choose_map_or_cafe" />
         <activity android:name=".setting" />
         <activity android:name=".Choose_Cafe" />
