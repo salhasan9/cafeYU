@@ -30,6 +30,8 @@ public class change_password extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
+        getSupportActionBar().hide();
+
         settings_password = (EditText) findViewById(R.id.settings_password);
         settings_confirm_password = (EditText) findViewById(R.id.settings_confirm_password);
         a_setting_update = (Button) findViewById(R.id.a_setting_update);

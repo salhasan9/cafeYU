@@ -14,6 +14,8 @@ public class choose_change_pass_or_change_profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_change_pass_or_change_profile);
+        getSupportActionBar().hide();
+
         change_pass = (ImageView) findViewById(R.id.User_change_pass);
         change_profile= (ImageView)findViewById(R.id.User_Change_profile);
 

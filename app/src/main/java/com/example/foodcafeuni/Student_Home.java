@@ -154,21 +154,16 @@ public class Student_Home extends AppCompatActivity implements NavigationView.On
 
 
         }else if (id==R.id.nav_Search){
-            Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show();
-            Intent obj = new Intent(Student_Home.this ,search.class);
-            startActivity(obj);
-
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
 
 
         }else if (id==R.id.nav_Setting){
-            Toast.makeText(this, "Setting ", Toast.LENGTH_SHORT).show();
-            Intent obj = new Intent(Student_Home.this , setting.class);
+            Intent obj = new Intent(Student_Home.this , choose_change_pass_or_change_profile.class);
             startActivity(obj);
 
 
 
         }else if(id==R.id.nav_Logout){
-            Toast.makeText(this, "Log Out ", Toast.LENGTH_SHORT).show();
             Intent obj = new Intent(Student_Home.this,MainActivity.class);
             obj.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(obj);
