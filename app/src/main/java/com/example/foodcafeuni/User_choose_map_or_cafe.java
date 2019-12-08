@@ -4,20 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class User_choose_map_or_cafe extends AppCompatActivity {
-    Button Choose_cafe ,near_cafe ;
+    ImageView Choose_cafe ,near_cafe ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_choose_map_or_cafe);
         getSupportActionBar().hide();
         //ini Var
-        Choose_cafe = (Button)findViewById(R.id.Choose_cafe);
-        near_cafe= (Button)findViewById(R.id.near_cafe);
+        Choose_cafe = (ImageView) findViewById(R.id.User_Choose_Cafe_Map_Or_Cafe);
+        near_cafe= (ImageView)findViewById(R.id.User_Choose_Cafe_Map_Or_Cafe_2);
         //Click Function
         Choose_cafe.setOnClickListener(new View.OnClickListener() {
             @Override
