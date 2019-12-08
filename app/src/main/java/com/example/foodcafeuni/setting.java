@@ -84,7 +84,7 @@ public class setting extends AppCompatActivity {
                     // startActivity(new Intent(setting.this, User_choose_map_or_cafe.class));
                     Toast.makeText(setting.this, "Profile Info update successfully.", Toast.LENGTH_SHORT).show();
                     finish();
-                    Toast.makeText(setting.this, "Mohammad", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(setting.this, "Mohammad", Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
