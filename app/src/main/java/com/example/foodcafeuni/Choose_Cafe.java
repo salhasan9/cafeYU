@@ -65,7 +65,7 @@ public class Choose_Cafe extends AppCompatActivity {
         Admin_Home_admin_imgae_setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent obj = new Intent(Choose_Cafe.this , setting.class);
+                Intent obj = new Intent(Choose_Cafe.this , choose_change_pass_or_change_profile.class);
                 obj.putExtra("ID","Setting");
                 startActivity(obj);
 
