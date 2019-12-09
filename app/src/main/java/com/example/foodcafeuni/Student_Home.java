@@ -154,8 +154,9 @@ public class Student_Home extends AppCompatActivity implements NavigationView.On
 
 
         }else if (id==R.id.nav_Search){
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
-
+            Intent obj = new Intent(Student_Home.this,Order_Track.class);
+            obj.putExtra("Idres",V_ID_Restaurant);
+            startActivity(obj);
 
         }else if (id==R.id.nav_Setting){
             Intent obj = new Intent(Student_Home.this , choose_change_pass_or_change_profile.class);

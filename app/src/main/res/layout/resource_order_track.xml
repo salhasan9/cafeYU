@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="15dp"
+    android:background="#fcf9ea"
+    app:cardElevation="4dp">
+
+
+    <LinearLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="360dp"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/A_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status : Not Ready"
+                android:textColor="@color/colorDark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.504" />
+
+            <TextView
+                android:id="@+id/A_price_order"
+                android:layout_width="109dp"
+                android:layout_height="27dp"
+                android:text="Price : 1500"
+                android:textColor="@color/colorDark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.869" />
+
+            <TextView
+                android:id="@+id/A_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : 10/10/2020"
+                android:textColor="@color/colorDark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.129"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.126" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

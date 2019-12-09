@@ -24,6 +24,7 @@ public class Confirm_Order extends AppCompatActivity {
 EditText V_full_name_confirm , V_phone_number_confirm ;
 Button V_btn_confirm ;
 String V_Total = "";
+String V_Res_Id="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,7 @@ String V_Total = "";
         V_phone_number_confirm  = (EditText)findViewById(R.id.A_phone_number_confirm);
         V_btn_confirm  = (Button)findViewById(R.id.A_btn_confirm);
         V_Total = getIntent().getStringExtra("TotalPrice");
-        
+        V_Res_Id = getIntent().getStringExtra("Resid");
         V_btn_confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,16 +66,16 @@ String V_Total = "";
 
         SimpleDateFormat V_Simple_Time = new SimpleDateFormat("HH:mm:ss a");
         V_Current_Time = V_Simple_Time.format(CalForDate.getTime());
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("Orders")
-                .child(Current_Any.ActiveUsers.getStudentNumber());
-        HashMap<String,Object>Hash_OrderMap = new HashMap<>();
+        final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("Orders");
+        final     HashMap<String,Object>Hash_OrderMap = new HashMap<>();
         Hash_OrderMap.put("total",V_Total);
         Hash_OrderMap.put("stduentname",V_full_name_confirm.getText().toString());
         Hash_OrderMap.put("studentphone",V_phone_number_confirm.getText().toString());
         Hash_OrderMap.put("date",V_Current_Date);
         Hash_OrderMap.put("time",V_Current_Time);
         Hash_OrderMap.put("state","not ready");
-databaseReference.updateChildren(Hash_OrderMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+        Hash_OrderMap.put("resid",V_Res_Id);
+            databaseReference.child("UserView").child(Current_Any.ActiveUsers.getStudentNumber()).child(String.valueOf(System.currentTimeMillis())).updateChildren(Hash_OrderMap).addOnCompleteListener(new OnCompleteListener<Void>() {
     @Override
     public void onComplete(@NonNull Task<Void> task) {
         if(task.isSuccessful()){
@@ -82,6 +83,7 @@ databaseReference.updateChildren(Hash_OrderMap).addOnCompleteListener(new OnComp
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     Toast.makeText(Confirm_Order.this, "Your request has been successfully reached", Toast.LENGTH_SHORT).show();
+                    databaseReference.child("AdminView").child(Current_Any.ActiveUsers.getStudentNumber()).updateChildren(Hash_OrderMap);
                     Intent intent = new Intent(Confirm_Order.this,Cart.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);

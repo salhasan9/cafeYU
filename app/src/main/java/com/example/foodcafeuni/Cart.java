@@ -54,6 +54,7 @@ public class Cart extends AppCompatActivity {
             public void onClick(View view) {        V_total_price_cart.setText(String.valueOf("Total Price = "+V_Total_Price+"JD"));
                 Intent obj = new Intent(Cart.this,Confirm_Order.class);
                 obj.putExtra("TotalPrice",String.valueOf(V_Total_Price));
+                obj.putExtra("Resid",V_ResID);
                 startActivity(obj);
 
             }
