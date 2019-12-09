@@ -34,8 +34,8 @@ String V_Res_Id="";
         V_full_name_confirm  = (EditText)findViewById(R.id.A_full_name_confirm);
         V_phone_number_confirm  = (EditText)findViewById(R.id.A_phone_number_confirm);
         V_btn_confirm  = (Button)findViewById(R.id.A_btn_confirm);
-        V_Total = getIntent().getStringExtra("TotalPrice");
-        V_Res_Id = getIntent().getStringExtra("Resid");
+        V_Total = getIntent().getStringExtra("TotalPrice_Cash");
+        V_Res_Id = getIntent().getStringExtra("Resid_Cash");
         V_btn_confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,7 +75,7 @@ String V_Res_Id="";
         Hash_OrderMap.put("time",V_Current_Time);
         Hash_OrderMap.put("state","not ready");
         Hash_OrderMap.put("resid",V_Res_Id);
-            databaseReference.child("UserView").child(Current_Any.ActiveUsers.getStudentNumber()).child(String.valueOf(System.currentTimeMillis())).updateChildren(Hash_OrderMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+            databaseReference.child("UserView").child(Current_Any.ActiveUsers.getStudentNumber()).child("OrderCurrent").updateChildren(Hash_OrderMap).addOnCompleteListener(new OnCompleteListener<Void>() {
     @Override
     public void onComplete(@NonNull Task<Void> task) {
         if(task.isSuccessful()){

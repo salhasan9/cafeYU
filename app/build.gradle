@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.foodcafeuni"
-        minSdkVersion 16
+        minSdkVersion 25
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -39,6 +39,7 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:3.2.2'
     implementation 'com.google.firebase:firebase-database:17.0.0'
     implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
 
 }
 apply plugin: 'com.google.gms.google-services'

@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Order_Track"></activity>
+        <activity android:name=".Choose_Payment"></activity>
+        <activity android:name=".Order_Track" />
         <activity android:name=".choose_change_pass_or_change_profile" />
         <activity android:name=".change_password" />
         <activity android:name=".User_choose_map_or_cafe" />

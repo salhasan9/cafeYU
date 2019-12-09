@@ -2,6 +2,7 @@ package com.example.foodcafeuni.Classes;
 
 public class Orders {
     String date , state, stduentname,studentphone,time,total ,studentid ,resid ;
+    String paymantState;
 
     public Orders() {
     }
