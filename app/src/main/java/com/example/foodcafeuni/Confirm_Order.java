@@ -61,7 +61,7 @@ String V_Res_Id="";
     private void AccpteOrder() {
         String V_Current_Time , V_Current_Date;
         Calendar CalForDate = Calendar.getInstance();
-        SimpleDateFormat V_Simple_Date = new SimpleDateFormat("MMM DD , YYYY");
+        SimpleDateFormat V_Simple_Date = new SimpleDateFormat("MM /d/ YYYY");
         V_Current_Date = V_Simple_Date.format(CalForDate.getTime());
 
         SimpleDateFormat V_Simple_Time = new SimpleDateFormat("HH:mm:ss a");

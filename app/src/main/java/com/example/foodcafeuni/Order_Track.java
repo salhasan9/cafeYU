@@ -50,7 +50,7 @@ public class Order_Track extends AppCompatActivity {
             protected void onBindViewHolder(@NonNull Orders_ViewHolder orders_viewHolder, int i, @NonNull Orders orders) {
                orders_viewHolder.V_Status.setText("Status : "+orders.getState());
                 orders_viewHolder.V_Price_Order.setText("Total : "+orders.getTotal());
-               orders_viewHolder.V_Date.setText("Date : "+orders.getDate()+" "+orders.getTime());
+               orders_viewHolder.V_Date.setText("Date : "+orders.getDate()+" || "+orders.getTime());
             }
 
             @NonNull

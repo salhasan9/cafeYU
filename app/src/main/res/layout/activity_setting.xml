@@ -15,7 +15,6 @@
 
     </ImageView>
 
-
     <TextView
                         android:id="@+id/profile_image_change_btn"
                         android:layout_width="wrap_content"
@@ -32,47 +31,48 @@
 
     <EditText
         android:id="@+id/settings_user_email"
-        android:layout_width="match_parent"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_image_change_btn"
-        android:hint="E-mail ..."
-        android:layout_margin="15dp"
-        android:padding="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/button_back"
         android:drawableRight="@drawable/ic_edit_black_24dp"
+        android:hint="E-mail ..."
         android:inputType="text"
+        android:padding="10dp"
         android:textColor="@android:color/white"
         android:textColorHint="@color/colorWhite"
-        android:textStyle="bold"
-        />
-
-
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/settings_confirm_collage"
-        android:layout_width="match_parent"
+        android:layout_width="396dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/settings_user_email"
-        android:hint="Confirm collage.."
-        android:layout_margin="15dp"
-        android:padding="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/button_back"
         android:drawableRight="@drawable/ic_create_black_24dp"
+        android:hint="Confirm collage.."
         android:inputType="text"
+        android:padding="10dp"
         android:textColor="@android:color/white"
         android:textColorHint="@color/colorWhite"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/a_setting_update"
-        android:layout_width="match_parent"
+        android:layout_width="277dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/settings_confirm_collage"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="59dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="70dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
         android:layout_weight="1"
@@ -86,10 +86,10 @@
 
     <Button
         android:id="@+id/A_setting_close"
-        android:layout_width="match_parent"
+        android:layout_width="278dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/a_setting_update"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="75dp"
         android:layout_marginTop="26dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"

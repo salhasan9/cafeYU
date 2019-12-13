@@ -106,7 +106,7 @@ public class Student_map_choose extends FragmentActivity implements OnMapReadyCa
                             mMap.clear();
                             // Add a marker in Sydney and move the camera
                             LatLng sydney = new LatLng(MylocationListener.location.getLatitude(), MylocationListener.location.getLongitude());
-                            mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in MYlocation").icon(BitmapDescriptorFactory.fromResource(R.drawable.icons8_student_male_filled_30px)));
+                            mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in MYlocation").icon(BitmapDescriptorFactory.fromResource(R.drawable.icons8_student_male_50)));
                             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,15));
 
                             for(int x = 0; x < listRes.size(); ++x)
@@ -154,10 +154,9 @@ public class Student_map_choose extends FragmentActivity implements OnMapReadyCa
 
     void  LoadRestaurant (){
         listRes.add(new Restaurant("1",R.drawable.icons8_restaurant_filled_30px,"cafe 1",32.541436,35.854372));
-        listRes.add(new Restaurant("2",R.drawable.icons8_restaurant_filled_30px,"cafe 2",32.534882,35.857701));
-        listRes.add(new Restaurant("3",R.drawable.icons8_restaurant_filled_30px,"cafe 3",32.537501,35.854945));
-        listRes.add(new Restaurant("4",R.drawable.icons8_restaurant_filled_30px,"cafe 4",32.537686,35.852301));
-        listRes.add(new Restaurant("5",R.drawable.icons8_restaurant_filled_30px,"cafe 5",32.559421,35.863991));
+        listRes.add(new Restaurant("2",R.drawable.icons8_restaurant_filled_30px,"cafe 2",32.537501,35.854945));
+        listRes.add(new Restaurant("3",R.drawable.icons8_restaurant_filled_30px,"cafe 3",32.534882,35.857701));
+       // listRes.add(new Restaurant("4",R.drawable.icons8_restaurant_filled_30px,"cafe 4",32.559421,35.863991));
 
 
        // 32.559421, 35.863991

@@ -44,4 +44,5 @@ public class CartClass {
     public void setResname(String resname) {
         this.resname = resname;
     }
+
 }

@@ -20,7 +20,7 @@ public class Choose_Cafe extends AppCompatActivity {
         V_Admin_Home_admin_imgae_res1=(ImageView)findViewById(R.id.Admin_Home_admin_imgae_res1);
         V_Admin_Home_admin_imgae_res2 = (ImageView)findViewById(R.id.Admin_Home_admin_imgae_res2);
         V_Admin_Home_admin_imgae_res3 = (ImageView)findViewById(R.id.Admin_Home_admin_imgae_res3);
-        Admin_Home_admin_imgae_res4 = (ImageView)findViewById(R.id.Admin_Home_admin_imgae_res4);
+        //Admin_Home_admin_imgae_res4 = (ImageView)findViewById(R.id.Admin_Home_admin_imgae_res4);
         Admin_Home_admin_imgae_setting = (ImageView)findViewById(R.id.Admin_Home_admin_imgae_setting);
         Admin_Home_admin_imgae_logout= (ImageView)findViewById(R.id.Admin_Home_admin_imgae_logout);
 
@@ -52,7 +52,7 @@ public class Choose_Cafe extends AppCompatActivity {
                 startActivity(obj);
             }
         });
-        Admin_Home_admin_imgae_res4.setOnClickListener(new View.OnClickListener() {
+      /*  Admin_Home_admin_imgae_res4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -61,7 +61,7 @@ public class Choose_Cafe extends AppCompatActivity {
                 startActivity(obj);
             }
         });
-
+      */
         Admin_Home_admin_imgae_setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

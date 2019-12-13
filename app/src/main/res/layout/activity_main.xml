@@ -23,6 +23,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/image1"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_gravity="center_horizontal"
@@ -37,7 +38,7 @@
                 android:textSize="18sp"
                 android:fontFamily="sans-serif-smallcaps"
                 android:textStyle="bold"
-                android:text="Wellcome to food program"
+                android:text="Wellcome to Yarmouk Fast Food Service "
                 android:textColor="@color/colorWhite">
 
             </TextView>

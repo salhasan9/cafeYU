@@ -40,6 +40,8 @@ public class setting extends AppCompatActivity {
         A_setting_update = (Button) findViewById(R.id.a_setting_update);
         A_setting_close = (Button) findViewById(R.id.A_setting_close);
         load = new ProgressDialog(this);
+
+
         settings_confirm_collage.setText(Current_Any.ActiveUsers.getCollage());
         settings_user_email.setText(Current_Any.ActiveUsers.getEmail());
 

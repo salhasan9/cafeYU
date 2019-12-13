@@ -19,6 +19,27 @@
     </ImageView>
 
     <TextView
+        android:id="@+id/we"
+        android:layout_width="294dp"
+        android:layout_height="51dp"
+        android:layout_gravity="left"
+        android:layout_weight="2"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text=" SETTING "
+        android:textColor="@color/colorWhite"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.01">
+
+
+    </TextView>
+
+    <TextView
         android:id="@+id/plese"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
@@ -27,20 +48,21 @@
         android:layout_alignParentLeft="true"
         android:text="   Please Choose Between: "
         android:textColor="@color/colorWhite"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199">
+        app:layout_constraintVertical_bias="0.271">
 
     </TextView>
 
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="414dp"
-        android:layout_height="241dp"
+        android:layout_width="410dp"
+        android:layout_height="267dp"
         android:alignmentMode="alignMargins"
         android:columnCount="2"
         android:columnOrderPreserved="false"
@@ -90,6 +112,7 @@
                     android:text="Change password "
                     android:textColor="@color/colorWhite"
                     android:textSize="17sp"
+                    android:gravity="center"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -121,7 +144,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/sasasa" />
+                    android:background="@drawable/icons8_change_user_50" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -131,6 +154,7 @@
                     android:text="Change profile"
                     android:textColor="@color/colorWhite"
                     android:textSize="17sp"
+                    android:gravity="center"
                     android:textStyle="bold" />
             </LinearLayout>
 

@@ -96,6 +96,7 @@ public class Student_Home extends AppCompatActivity implements NavigationView.On
 
     @Override
     protected void onStart() {
+
         super.onStart();
         FirebaseRecyclerOptions<Food> options =
                 new FirebaseRecyclerOptions.Builder<Food>().setQuery(databaseReference.orderByChild("resid").equalTo(V_ID_Restaurant),Food.class).build();
@@ -113,7 +114,7 @@ public class Student_Home extends AppCompatActivity implements NavigationView.On
                                 Intent obj = new Intent(Student_Home.this,Food_Details.class);
                                 obj.putExtra("FoodID",adapter.getRef(position).getKey());
                                 startActivity(obj);
-                                Toast.makeText(Student_Home.this, "hi", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Student_Home.this, "Hi", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }
@@ -153,7 +154,7 @@ public class Student_Home extends AppCompatActivity implements NavigationView.On
             startActivity(obj);
 
 
-        }else if (id==R.id.nav_Search){
+        }else if (id==R.id.nav_order){
             Intent obj = new Intent(Student_Home.this,Order_Track.class);
             obj.putExtra("Idres",V_ID_Restaurant);
             startActivity(obj);
