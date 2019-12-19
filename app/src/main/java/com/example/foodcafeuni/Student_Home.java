@@ -149,13 +149,14 @@ public class Student_Home extends AppCompatActivity implements NavigationView.On
             Intent obj = new Intent(Student_Home.this , User_choose_map_or_cafe.class);
             startActivity(obj);
         }else if (id==R.id.nav_Cart){
-            Toast.makeText(this, "Cart", Toast.LENGTH_SHORT).show();
             Intent obj = new Intent(Student_Home.this ,Cart.class);
+            obj.putExtra("IDRESCart",V_ID_Restaurant);
             startActivity(obj);
 
 
         }else if (id==R.id.nav_order){
             Intent obj = new Intent(Student_Home.this,Order_Track.class);
+
             obj.putExtra("Idres",V_ID_Restaurant);
             startActivity(obj);
 
