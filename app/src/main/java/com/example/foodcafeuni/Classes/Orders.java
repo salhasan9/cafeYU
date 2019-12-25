@@ -1,13 +1,12 @@
 package com.example.foodcafeuni.Classes;
 
 public class Orders {
-    String date , state, stduentname,studentphone,time,total ,studentid ,resid ;
-    String paymantState;
+    String date , state, stduentname,studentphone,time,total ,studentid ,resid ,note ,idstu ;
 
     public Orders() {
     }
 
-    public Orders(String date, String state, String stduentname, String studentphone, String time, String total, String studentid, String resid) {
+    public Orders(String date, String state, String stduentname, String studentphone, String time, String total, String studentid, String resid, String note, String idstu) {
         this.date = date;
         this.state = state;
         this.stduentname = stduentname;
@@ -16,6 +15,8 @@ public class Orders {
         this.total = total;
         this.studentid = studentid;
         this.resid = resid;
+        this.note = note;
+        this.idstu = idstu;
     }
 
     public String getDate() {
@@ -80,5 +81,21 @@ public class Orders {
 
     public void setResid(String resid) {
         this.resid = resid;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+
+    public String getIdstu() {
+        return idstu;
+    }
+
+    public void setIdstu(String idstu) {
+        this.idstu = idstu;
     }
 }

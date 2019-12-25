@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.example.foodcafeuni.Action.ItemClickListener;
 import com.example.foodcafeuni.Classes.Food;
+import com.example.foodcafeuni.Classes.Token;
 import com.example.foodcafeuni.Temp.Current_Any;
 import com.example.foodcafeuni.ViewMenus.FoodViewMenu;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -29,6 +30,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.FirebaseOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.squareup.picasso.Picasso;
 
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -92,7 +94,17 @@ public class Student_Home extends AppCompatActivity implements NavigationView.On
 
         V_TextFullName =(TextView) headerView.findViewById(R.id.A_UserName);
         V_TextFullName.setText(Current_Any.ActiveUsers.getName());
+
+        UpdateToken(FirebaseInstanceId.getInstance().getToken());
+
     }
+    private void UpdateToken(String token) {
+        FirebaseDatabase Database = FirebaseDatabase.getInstance();
+        DatabaseReference Token_Firebase = Database.getReference().child("Tokens");
+        Token Token_Class = new Token(token,false);
+        Token_Firebase.child(Current_Any.ActiveUsers.getStudentNumber()).setValue(Token_Class);
+    }
+
 
     @Override
     protected void onStart() {
@@ -114,7 +126,6 @@ public class Student_Home extends AppCompatActivity implements NavigationView.On
                                 Intent obj = new Intent(Student_Home.this,Food_Details.class);
                                 obj.putExtra("FoodID",adapter.getRef(position).getKey());
                                 startActivity(obj);
-                                Toast.makeText(Student_Home.this, "Hi", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }

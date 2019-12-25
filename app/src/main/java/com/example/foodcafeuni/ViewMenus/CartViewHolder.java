@@ -10,7 +10,7 @@ import com.example.foodcafeuni.Action.ItemClickListener;
 import com.example.foodcafeuni.R;
 
 public class CartViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-    public TextView V_Food_Name_Cart , V_Food_Price_Cart ,V_Food_Restaurant_Cart ;
+    public TextView V_Food_Name_Cart , V_Food_Price_Cart ,V_Food_Restaurant_Cart ,V_txt_Quant;
     private ItemClickListener itemClickListener;
 
     public void setItemClickListener(ItemClickListener itemClickListener) {
@@ -22,7 +22,7 @@ public class CartViewHolder extends RecyclerView.ViewHolder implements View.OnCl
         V_Food_Name_Cart =(TextView)itemView.findViewById(R.id.A_Food_Name_Cart);
         V_Food_Price_Cart =(TextView)itemView.findViewById(R.id.A_Food_Price_Cart);
         V_Food_Restaurant_Cart = (TextView)itemView.findViewById(R.id.A_Food_Restaurant_Cart);
-
+        V_txt_Quant=(TextView)itemView.findViewById(R.id.A_txt_Quant);
     }
 
     @Override

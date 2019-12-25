@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.example.foodcafeuni.Classes.Food;
 import com.example.foodcafeuni.Temp.Current_Any;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,7 +30,8 @@ public class Food_Details extends AppCompatActivity {
         FloatingActionButton V_btn_add;
         TextView V_food_name_details ,V_food_price_details ,V_food_dec_details;
         ImageView V_image_food_details;
-        String V_FoodID ;
+    ElegantNumberButton V_NumberFood ;
+    String V_FoodID ;
         String V_ResID = "";
         String V_ResName = "";
         String V_DB= "Food";
@@ -38,12 +40,12 @@ public class Food_Details extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food__details);
         getSupportActionBar().hide();
-
         V_btn_add = (FloatingActionButton)findViewById(R.id.A_btn_add);
         V_food_name_details = (TextView)findViewById(R.id.A_food_name_details);
         V_food_price_details = (TextView)findViewById(R.id.A_food_price_details);
         V_image_food_details = (ImageView)findViewById(R.id.A_image_food_details);
         V_food_dec_details = (TextView)findViewById(R.id.A_food_dec_details);
+        V_NumberFood = (ElegantNumberButton)findViewById(R.id.A_number_food);
         V_FoodID = getIntent().getStringExtra("FoodID");
         V_btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +55,6 @@ public class Food_Details extends AppCompatActivity {
 
 
         });
-       // Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
 getFoodDetails(V_FoodID);
     }
     private void AddingToCart() {
@@ -66,12 +67,14 @@ getFoodDetails(V_FoodID);
         V_Current_Time = V_Simple_Time.format(CalForDate.getTime());
 
         final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("Cart");
+
         final HashMap<String,Object>Hash_CartMap = new HashMap<>();
         Hash_CartMap.put("foodid",V_FoodID);
         Hash_CartMap.put("foodname",V_food_name_details.getText().toString());
         Hash_CartMap.put("foodprice",V_food_price_details.getText().toString());
         Hash_CartMap.put("date",V_Current_Date);
         Hash_CartMap.put("time",V_Current_Time);
+        Hash_CartMap.put("quantity",V_NumberFood.getNumber());
         Hash_CartMap.put("resid",V_ResID);
         Hash_CartMap.put("resname",V_ResName);
         databaseReference.child("UserView").child(Current_Any.ActiveUsers.getStudentNumber()).child("Food").child(V_FoodID).updateChildren(

@@ -75,11 +75,11 @@ public class Cart extends AppCompatActivity {
                 new FirebaseRecyclerAdapter<CartClass, CartViewHolder>(options) {
                     @Override
                     protected void onBindViewHolder(@NonNull final CartViewHolder cartViewHolder, int i, @NonNull final CartClass cartClass) {
-                        cartViewHolder.V_Food_Restaurant_Cart.setText(cartClass.getResname());
-                        cartViewHolder.V_Food_Price_Cart.setText(cartClass.getFoodprice());
-                        cartViewHolder.V_Food_Name_Cart.setText(cartClass.getFoodname());
-
-                        int V_TotalPriceNow = ((Integer.valueOf(cartClass.getFoodprice())));
+                        cartViewHolder.V_Food_Restaurant_Cart.setText("Cafe Name: "+cartClass.getResname());
+                        cartViewHolder.V_Food_Price_Cart.setText("Food Price: "+cartClass.getFoodprice());
+                        cartViewHolder.V_Food_Name_Cart.setText("Food Name: "+cartClass.getFoodname());
+                        cartViewHolder.V_txt_Quant.setText("Quantity: "+cartClass.getQuantity());
+                        int V_TotalPriceNow = ((Integer.valueOf(cartClass.getFoodprice()))) * (Integer.valueOf(cartClass.getQuantity()));
                         V_Total_Price+=V_TotalPriceNow;
 
                         cartViewHolder.itemView.setOnClickListener(new View.OnClickListener() {

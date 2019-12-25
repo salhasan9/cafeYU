@@ -1,16 +1,17 @@
 package com.example.foodcafeuni.Classes;
 
 public class CartClass {
-    private  String foodid , foodname,foodprice,resname;
+    private  String foodid , foodname,foodprice,resname ,quantity;
 
     public CartClass() {
     }
 
-    public CartClass(String foodid, String foodname, String foodprice, String resname) {
+    public CartClass(String foodid, String foodname, String foodprice, String resname, String quantity) {
         this.foodid = foodid;
         this.foodname = foodname;
         this.foodprice = foodprice;
         this.resname = resname;
+        this.quantity = quantity;
     }
 
     public String getFoodid() {
@@ -45,4 +46,11 @@ public class CartClass {
         this.resname = resname;
     }
 
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
+    }
 }

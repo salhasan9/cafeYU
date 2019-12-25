@@ -7,6 +7,27 @@
     android:background="@drawable/c"
     tools:context=".Confirm_Order">
 
+    <EditText
+        android:id="@+id/A_note_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/button_back"
+        android:drawableRight="@drawable/ic_note_black_24dp"
+        android:hint="Enter Any Note"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558">
+
+
+    </EditText>
+
     <Button
         android:id="@+id/A_btn_confirm"
         android:layout_width="320dp"
@@ -39,8 +60,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556"
-        tools:layout_editor_absoluteX="12dp">
+        app:layout_constraintVertical_bias="0.464"
+        tools:layout_editor_absoluteX="0dp">
 
 
     </EditText>
@@ -58,8 +79,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintVertical_bias="0.367"
+        tools:layout_editor_absoluteX="-7dp">
 
 
     </EditText>
@@ -76,10 +97,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16">
+        app:layout_constraintVertical_bias="0.159">
 
     </TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>

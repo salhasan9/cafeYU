@@ -35,23 +35,23 @@
 
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.672"
+                app:layout_constraintHorizontal_bias="0.946"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.964" />
+                app:layout_constraintVertical_bias="0.941" />
 
             <TextView
                 android:id="@+id/A_Food_Price_Cart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1000"
+                android:textColor="@color/colorDark"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorDark"
 
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintHorizontal_bias="0.086"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.505" />
@@ -66,52 +66,27 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.946"
+                app:layout_constraintHorizontal_bias="0.089"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.047" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/A_txt_Quant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Restaurant Name :="
+                android:text="1000"
+                android:textColor="@color/colorDark"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.061"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.952" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Food Price :="
-                android:textSize="20dp"
-                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintHorizontal_bias="0.086"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.505" />
+                app:layout_constraintVertical_bias="0.941" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Food Name :="
-                android:textSize="20dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.059"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.035" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

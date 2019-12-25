@@ -10,15 +10,17 @@
         android:id="@+id/A_image_food_details"
         android:layout_width="match_parent"
         android:layout_height="260dp"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="-16dp">
+        app:layout_constraintVertical_bias="0.0">
 
     </ImageView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="5dp"
@@ -130,5 +132,20 @@
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/A_number_food"
+        android:layout_width="201dp"
+        android:layout_height="62dp"
+        android:elevation="6dp"
+        android:background="@color/colorPrimary"
+        app:textColor="@color/colorWhite"
+        app:initialNumber="1"
+        app:textSize="15dp"
+        app:finalNumber="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/A_image_food_details"
+        app:layout_constraintVertical_bias="0.866" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
